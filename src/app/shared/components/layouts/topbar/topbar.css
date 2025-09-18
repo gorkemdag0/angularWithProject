@@ -1,0 +1,77 @@
+.top-bar{
+    padding: 5px;
+    position: relative;
+    margin-left: -30px;
+
+}
+
+
+.left-section{
+    margin-left: 5%;
+}
+
+h1{
+    
+    margin-left: 5px;
+}
+
+.pd {
+    margin-top: 10px;
+}
+
+.topIcon{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.right-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;   
+    margin-right: 10px;               
+}
+
+table {
+    border: 2px solid black;
+}
+
+.onlineBuilder {
+    color: blueviolet;
+    size:40px;
+    border: 2px solid blueviolet;
+    border-radius: 1cap;
+    background-color: #f0f0f0; 
+    padding: 8px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 1cap;
+    
+}
+
+.starTable {
+    border-collapse: collapse; 
+    margin: 5px;
+  }
+  
+  .starTable th {
+    padding: 4px 12px;
+    text-align: center;
+  }
+  
+ 
+  .starTable .leftCell {
+    background-color: #f0f0f0; 
+    border-right: 2px solid black; 
+  }
+  
+  
+  .starTable .rightCell {
+    background-color: white;
+  }
+  

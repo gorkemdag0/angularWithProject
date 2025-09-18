@@ -1,11 +1,26 @@
 
-<div style="display: flex;">
-    <div>
-        <app-sidebar></app-sidebar>
+    <div class="genelYapi" style="display: flex; flex-direction: row; background-color: rgb(201, 201, 201); width: 100%; height: 100%;" >
+        <div class="sidebarStyle">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="topCard" style="display: flex; flex-direction: column;" >
+            <app-topbar></app-topbar>
+            <div class="ortaCard">
+                @for (item of cards; track item) {
+                    <app-component-card 
+                    [title]="item.title" 
+                    [miktar]="item.miktar"
+                    [oran]="item.oran"
+                    [zaman]="item.zaman"
+                    [ikon]="item.ikon"
+                    (cardClicked)="onCardClicked($event)">
+                    </app-component-card>
+                }
+            </div>
+            <button (click)="onAllCardsButtonClick()" class="all-cards-button">Tüm Detayları Gör</button>
+        </div>
     </div>
-    <div>
-        <app-topbar></app-topbar>
-    </div>
-    
-</div>
+
+
+
 
